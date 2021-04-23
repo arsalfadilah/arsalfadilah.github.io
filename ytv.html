@@ -1,0 +1,39 @@
+<DOCTYPE! html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>YT Viewer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/ytstyle.css">    
+    </head>
+
+    <body>
+        <h1>YOUTUBE VIEWER</h1>
+        <form>
+            <label>Link : </label><br>
+            <input type="text" id="iniLink" value="https://www.youtube.com/watch?v=kwj7qsuo_EA"><br><br>
+            <label>Jumlah : </label><br>
+            <input type="number" id="jmlh" min="0"><br><br>
+            <input type="button" id="tombol" onclick="setJmlh()" value="Atur">
+        </form>
+  
+        <div id="container"></div>
+
+        <div class="help">
+            <h3>How To :</h3>
+            <ol>
+                <li>Masukan link YouTube kalian</li>
+                <li>Masukan jumlah view yang diinginkan</li>
+                <li>Klik play untuk menjalankannya</li>
+                <li>Jangan lupa Pop-Up harus di-non-aktifkan/allow Pop-Up for this site</li>
+            </ol>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2021 (c)</p>
+        </div>
+
+        <script src="./js/kode.js"></script>
+    </body>
+
+</html>
