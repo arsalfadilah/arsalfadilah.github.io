@@ -859,3 +859,21 @@
       .footer-bottom-inner p {
         font-size: 14px;
         margin-bottom: 20px; } }
+
+/*Add style*/
+.fa-instagram{
+  font-size: 1rem;
+  color: white;
+}
+.fa-youtube{
+  font-size: 1rem;
+  color: white;
+}
+.fa-facebook{
+  font-size: 1rem;
+  color: white;
+}
+.fa-whatsapp{
+  font-size: 1rem;
+  color: white;
+}
