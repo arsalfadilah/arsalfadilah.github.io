@@ -27,36 +27,55 @@
 	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<title>Arsal Fadilah</title>
+	<style>
+		.navbar .collapse .navbar-nav .nav-item a{
+			color: white;
+		}
+	</style>
 </head>
 <body>
+	<button type="button" id="mobile-nav-toggle"><i class="fa fa-bars" aria-hidden="true" class></i></button>
+  <!-- ======= Header ======= -->
 
-	<!-- Navigation -->
-	<nav class="site-navigation">
-		<div class="site-navigation-inner site-container">
-			<img src="https://see.fontimg.com/api/renderfont4/WyZKz/eyJyIjoiZnMiLCJoIjo2NSwidyI6MTAwMCwiZnMiOjY1LCJmZ2MiOiIjRkJBNTBDIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/QUZwcm9kdWN0aW9u/readiculous.png" alt="site logo">
-			<div class="main-navigation">
-				<ul class="main-navigation__ul">
-					<li><a href="#">Homepage</a></li>
-					<li><a href="ytv.html">Youtube Viewer</a></li>
-					<li><a href="#">Page 2</a></li>
-					<li><a href="#">Page 3</a></li>
-					<li><a href="#">Page 4</a></li>
-				</ul>
-			</div>
-			<div id="myBtn" class="burger-container" onclick="myFunction(this)">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
-			<script>
-				function myFunction(x) {
-					x.classList.toggle("change");
-				}
-			</script>
+  <header id="header" class="header-transparent">
+    <div class="container">
 
-		</div>
-	</nav>
-	<!-- Navigation end -->
+      <div id="logo" class="pull-left">
+        <a href="index.html"><img src="https://see.fontimg.com/api/renderfont4/K7ZB7/eyJyIjoiZnMiLCJoIjozMywidyI6MTAwMCwiZnMiOjMzLCJmZ2MiOiIjRTg5NTA5IiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/QUZfQUpB/api-nyala.png" alt="site logo"></a>
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="index.html">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#services">Services</a></li>
+          <li class="menu-has-children"><a href="#">Tugas</a>
+            <ul>
+              <li class="menu-has-children"><a href="#">Portofolio Personal</a>
+                <ul>
+                  <li><a href="https://arsalfadilah.github.io/">Arsal Fadilah</a></li>
+                  <li><a href="#">Hilma Sri Rahayu</a></li>
+                  <li><a href="#">Luthfi Majid</a></li>
+                  <li><a href="#">Lamda Richo V. S.</a></li>
+                  <li><a href="#">Nisa Hauna</a></li>
+                </ul>
+              </li>
+              <li class="menu-has-children"><a href="web_scraping.html">Web Scraping</a>
+                <ul>
+                  <li><a href="scraping_1.html">Data Scraping 1</a></li>
+                  <li><a href="scraping_2.html">Data Scraping 2</a></li>
+                </ul>
+              </li>
+              <li><a href="#">On Going</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav><!-- #nav-menu-container -->
+    </div>
+  </header><!-- End Header -->
+
 
 	<!-- Top banner -->
 	<section class="fh5co-top-banner">
@@ -84,7 +103,7 @@
 	<!-- Top banner end -->
 
 	<!-- About me -->
-	<section class="fh5co-about-me">
+	<section id="about" class="fh5co-about-me">
 		<div class="about-me-inner site-container">
 			<article class="portfolio-wrapper" data-aos="fade-up" data-aos-duration="2500">
 				<div class="portfolio__img">
@@ -115,7 +134,7 @@
 
 	<!-- Personal Information -->
 	<section>
-		<div class="container">
+		<div id="portfolio" class="container">
 			<h2 class="universal-h2 universal-h2-bckg mb-4">Personal Information</h2>
 			<div class="row shadow p-4 mb-4 bg-white" data-aos="fade-left" data-aos-duration="3000">
 				<div class="col-sm-4 d-flex align-items-center justify-content-center">
@@ -304,6 +323,21 @@
 	<script src="js/slick.min.js"></script>
 	<script src="js/main.js"></script>
 	<script src="https://kit.fontawesome.com/f4384ea78b.js" crossorigin="anonymous"></script>
+	  <!-- Vendor JS Files -->
+	  <script src="vendor/jquery/jquery.min.js"></script>
+	  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+	  <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
+	  <script src="vendor/php-email-form/validate.js"></script>
+	  <script src="vendor/counterup/counterup.min.js"></script>
+	  <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+	  <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+	  <script src="vendor/superfish/superfish.min.js"></script>
+	  <script src="vendor/hoverIntent/hoverIntent.js"></script>
+	  <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
+	  <script src="vendor/venobox/venobox.min.js"></script>
+
+	<script src="js/nav.js"></script>
+	
 	<!-- Initial Aos -->
 	<script>
 		AOS.init();
